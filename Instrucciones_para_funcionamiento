@@ -1,0 +1,19 @@
+dentro el workspace:	
+para el ejercicio1
+	-visualización
+		colcon build
+		source install/setup.bash
+		ros2 launch robot_description view_brazo.launch.py
+	-cinematica inversa
+		colcon build
+		source install/setup.bash
+		ros2 run ejercicio1_pkg brazo_inverse_kinematics
+para el ejercicio2
+	-visualización
+		colcon build
+		source install/setup.bash
+		ros2 launch robot_description view_scara.launch.py
+	-cinematica inversa
+		colcon build
+		source install/setup.bash
+		ros2 run ejercicio1_pkg scara_inverse_kinematics
